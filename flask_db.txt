@@ -1,0 +1,22 @@
+# import sqlite3
+#
+# # create a connection to the database
+# # if the database doesn't exist then it will be created
+#
+# db = sqlite3.connect("books-collection.db")
+#
+# # create a cursor which will control our database
+#
+# cursor = db.cursor()
+#
+# # create a table
+# # execute() method tells the cursor to execute an action
+#
+# # cursor.execute("create table books(id integer primary key, title varchar(250) not null unique, author varchar(250) not null, rating float not null)")
+#
+# # add data to table
+# cursor.execute("INSERT INTO books VALUES(1, 'Harry Potter', 'J. K. Rowling', '9.3')")
+# db.commit()
+#
+# # there are much better ways of working with SQLite in Python projects,
+# # we can use a tool called SQLAlchemy to write Python code instead of all these error-prone SQL commands.
